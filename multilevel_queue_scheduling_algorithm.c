@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include <stdlib.h>
+#include<unistd.h>
 struct process{
 	int priority;
 	int burst_time;
