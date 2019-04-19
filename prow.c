@@ -51,8 +51,8 @@ printf("\nFor Round Robin Scheduling");
     else 
       count=0; 
   } 
-  printf("\nAverage Waiting Time= %f\n",wait_time*1.0/n); 
-  printf("Avg Turnaround Time = %f",turnaround_time*1.0/n); 
+ // printf("Average Waiting Time= %f\n",wait_time*1.0/n); 
+ // printf("Avg Turnaround Time = %f",turnaround_time*1.0/n); 
  sleep(10); 
 //-------------------------------------------------------------------------//
     for(count=0;count<n;count++)
@@ -100,9 +100,9 @@ printf("\nFor Round Robin Scheduling");
         printf("\nP[%d]\t\t  %d\t\t    %d\t\t\t%d",p[count],bt[count],wt[count],tat[count]);
     }
  
-    avg_tat=total/n;     //average turnaround time
-    printf("\nAverage Waiting Time=%d",avg_wt);
-    printf("\nAverage Turnaround Time=%d",avg_tat);
+  //  avg_tat=total/n;     //average turnaround time
+  //  printf("\nAverage Waiting Time=%d",avg_wt);
+//    printf("\nAverage Turnaround Time=%d",avg_tat);
  sleep(10);
 //------------------------------------------------------------------------------------//
     //calculating waiting time
@@ -123,9 +123,9 @@ printf("\nFor Round Robin Scheduling");
         avtat+=tat[count];
         printf("\nP[%d]\t\t%d\t\t%d\t\t%d",count+1,bt[count],wt[count],tat[count]);
     }
-    avwt/=count;
-    avtat/=count;
-    printf("\nAverage Waiting Time:%d",avwt);
-    printf("\nAverage Turnaround Time:%d\n",avtat);
+   // avwt/=count;
+ //   avtat/=count;
+//    printf("\nAverage Waiting Time:%d",avwt);
+ //   printf("\nAverage Turnaround Time:%d\n",avtat);
     return 0;
 }
